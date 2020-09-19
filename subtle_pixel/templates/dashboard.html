@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="../static/style.css">
+        <script src="../static/main.js"></script>
+        <script>
+            $(window).load(function() {
+            $(".se-pre-con").fadeOut("slow");
+            });
+        </script>
+        <style>
+        h1 {
+              font-size: 24pt;
+        }
+
+        canvas {
+              height: 300px;
+                width: 500px;
+                  border: 1px solid lightgray;
+        }
+        </style>
+        <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+    </head>
+<body>
+    <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+    <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimplePixel.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script src="../static/three.r119.min.js"></script>
+<script src="../static/vanta.waves.min.js"></script>
+<script src="../static/main.js"></script>
+<script src="../static/image.js"></script>
+    <div class="se-pre-con"></div>
+<div id="vanta">
+   <div class="container">
+       <!--<img style="height:70%; width:70%; opacity:0.35; margin-left:180px; margin-right:100px; margin-top:20px; z-index:100;"src="sub.jpeg"/>-->
+       <!-- <img style="height:65%; width:65%; opacity:0.35; margin-left:95px; margin-right:60px; margin-top:28px;"src="../static/sub.jpeg"/>-->
+    <h1 class="ml12">Welcome {{name}}</h1>
+    <h1>Lorem ipsum dollar <h1>
+    <div>
+        <canvas id="can1">
+        </canvas>
+        <p><input type="file" multiple="false" accept="image/*" id="finput" onchange="upload()">
+        </p>
+    </div>
+   </div>
+</div>
+<script>
+$(window).load(function() {
+    $(".se-pre-con").fadeOut("slow");
+});
+
+VANTA.WAVES({
+  el: "#vanta",
+  //mouseControls: true,
+  //touchControls: true,
+  gyroControls: false,
+  minHeight: 800.00,
+  minWidth: 800.00,
+  //scale: 1.00,
+  //scaleMobile: 1.00,
+  color: 0x000000,
+  waveHeight: 12.50,
+  waveSpeed: 0.60
+})
+</script>
+</body>
